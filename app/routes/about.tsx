@@ -27,7 +27,7 @@ const AboutPage = () => {
 
 	return (
 		<div>
-			<h1>About Page</h1>
+			<h1>Hello world</h1>
 			{data.data.map((item) => (
 				<div key={item._id}>
 					{item.firstName} {item.lastName}
