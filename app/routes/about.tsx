@@ -18,7 +18,7 @@ export const loader = async () => {
 
 export const headers: HeadersFunction = () => {
 	return {
-		"Cache-Control": "public, s-maxage=9999999 stale-while-revalidate=9999999",
+		"Cache-Control": "public, max-age=30",
 	};
 };
 
