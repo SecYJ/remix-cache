@@ -11,7 +11,7 @@ interface User {
 export const loader = async () => {
 	const data = await axios.get<{
 		data: User[];
-	}>("https://remix-knowledge-sharing-backend.onrender.com/todos");
+	}>("https://remix-knowledge-sharing-backend.onrender.com/notes");
 
 	return json(data.data);
 };
