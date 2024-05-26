@@ -18,7 +18,7 @@ export const loader = async () => {
 
 export const headers: HeadersFunction = () => {
 	return {
-		"Cache-Control": "public, s-maxage=30 stale-while-revalidate=60",
+		"Cache-Control": "public, s-maxage=9999999 stale-while-revalidate=9999999",
 	};
 };
 
@@ -27,7 +27,7 @@ const AboutPage = () => {
 
 	return (
 		<div>
-			<h1>Hello world</h1>
+			<h1>About</h1>
 			{data.data.map((item) => (
 				<div key={item._id}>
 					{item.firstName} {item.lastName}
