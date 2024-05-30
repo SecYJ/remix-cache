@@ -3,8 +3,7 @@ import { json, useLoaderData } from "@remix-run/react";
 import axios from "axios";
 
 interface User {
-	firstName: string;
-	lastName: string;
+	username: string;
 	_id: string;
 }
 
@@ -29,9 +28,7 @@ const AboutPage = () => {
 		<div>
 			<h1>About</h1>
 			{data.data.map((item) => (
-				<div key={item._id}>
-					{item.firstName} {item.lastName}
-				</div>
+				<div key={item._id}>{item.username}</div>
 			))}
 		</div>
 	);
